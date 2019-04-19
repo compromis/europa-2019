@@ -1,0 +1,66 @@
+// Colors
+$orange: #E35205;
+$beige: #F6F2ED;
+$blue: #447F98;
+$indigo: #4D5099;
+$pink: #DE8999;
+$green: #477F50;
+$primary: $orange;
+
+// Programa sections
+$programa: (
+  'tracte-just': (
+    'background': $orange,
+  ),
+  'serveis-socials': (
+    'background': #ec6555,
+  ),
+  'educacio': (
+    'background': #00bdaa,
+  ),
+  'salut': (
+    'background': #48acd5,
+  ),
+  'ocupacio': (
+    'background': #2bb8d1,
+  ),
+  'territori': (
+    'background': #db8354,
+  ),
+  'model-economic': (
+    'background': #f99b1c,
+  ),
+  'drets-ciutadania': (
+    'background': #a8026f,
+  ),
+  'joventut': (
+    'background': #db2d43,
+  ),
+  'feminismes': (
+    'background': #8050a0,
+  ),
+  'agricultura': (
+    'background': #e75b20,
+  ),
+  'cultura-esports': (
+    'background': #f99b1c,
+  ),
+  'medi-ambient': (
+    'background': #388e3c,
+  ),
+);
+
+// Fonts
+$font-family-sans-serif: 'Compromis', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-headings: 'Fixture', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1600px
+) !default;
+
+$nav-height: 67px;

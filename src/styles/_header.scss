@@ -1,0 +1,281 @@
+.navbar {
+  transition: .25s ease-in-out;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: -.25rem;
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &-languages {
+    position: relative;
+    z-index: 100;
+  }
+
+  &-brand {
+    padding: 0;
+    margin-left: -.4375rem;
+
+    .brand-logo {
+      display: inline-block;
+      overflow: hidden;
+      width: 208px;
+      transition: .25s ease-in-out;
+      vertical-align: middle;
+      
+      svg {
+        width: 208px;
+        transform: translateY(-2px);
+      }
+
+      &--compact {
+        width: 50px;
+      }
+    }
+
+    .brand-campaign {
+      font-weight: bold;
+      font-size: 1.75rem;
+      position: relative;
+      top: 3px;
+      letter-spacing: -1px;
+      overflow: hidden;
+      transition: .25s ease-in-out;
+
+      &--compact {
+        opacity: 0;
+      }
+    }
+  }
+
+  &-light {
+    background: $white !important;
+
+    .social-icon {
+      font-size: 1.5rem;
+    }
+
+    .navbar-brand {
+      color: $gray-800;
+      width: 13rem;
+    }
+  }
+
+  &-open {
+    .navbar-brand {
+      position: relative;
+      z-index: 10000;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .menu-button {
+      color: $white;
+    }
+  }
+
+  .social-icon {
+    &.facebook:hover {
+      color: #3b5998;
+    }
+
+    &.twitter:hover {
+      color: #38A1F3;
+    }
+
+    &.instagram:hover {
+      color: #DD2A7B;
+    }
+
+    &.whatsapp:hover {
+      color: #25D366;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent !important;
+
+    .navbar-brand,
+    .nav-link,
+    .btn {
+      color: $white !important;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+
+    .navbar-languages {
+      border-left-color: rgba($white, .5);
+      border-right-color: rgba($white, .5);
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: $orange;
+  color: $white;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+  padding: 5rem 0;
+  transition: .5s ease-in;
+  overflow-y: scroll;
+
+  .social-icon {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    justify-self: end;
+    align-self: end;
+    color: $white;
+    padding: .25rem .75rem;
+    border-radius: .25rem;
+    margin-left: -.5rem;
+
+    svg {
+      position: relative;
+      top: -2px;
+    }
+
+    &.facebook:hover {
+      background-color: #3b5998;
+      color: $white;
+    }
+
+    &.twitter:hover {
+      background-color: #38A1F3;
+      color: $white;
+    }
+
+    &.instagram:hover {
+      background-color: #DD2A7B;
+      color: $white;
+    }
+
+    &.whatsapp:hover {
+      background-color: #25D366;
+      color: $white;
+    }
+  }
+
+  &-main {
+    margin-top: -1.5rem !important;
+  }
+
+  &-social {
+    justify-items: end;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-languages {
+    a {
+      color: $white;
+      font-size: 1.5rem;
+    }
+  }
+
+  &-button {
+    color: $gray-700;
+    z-index: 10000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    svg {
+      position: relative;
+      top: -2px;
+      font-size: 1.5rem;
+      margin-left: .25rem;
+    }
+  }
+
+  &-link {
+    display: block;
+    text-transform: uppercase;
+    font-family: $font-family-headings;
+    font-size: 5rem;
+    color: $white;
+    text-decoration: none;
+    line-height: 100%;
+
+    span {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: .25rem;
+        width: 0;
+        background: $white;
+        transition: .25s ease-in-out;
+      }
+    }
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+
+      span::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &-closed {
+    top: -100%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+
+    &-languages {
+      padding: 0 1rem !important;
+      margin: 0 1rem !important;
+      border-left: 1px $gray-500 solid;
+      border-right: 1px $gray-500 solid;
+    }
+
+    .container-fluid {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .menu {
+    padding-top: 8rem;
+
+    &-link {
+      font-size: 7rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-languages {
+    display: none;
+  }
+}

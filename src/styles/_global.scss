@@ -1,0 +1,23 @@
+body {
+  padding-top: $nav-height;
+}
+
+html.menu-is-open {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  min-height: 60vh;
+}
+
+.container-fluid {
+  max-width: 2000px;
+}
+
+@include media-breakpoint-up(md) {
+  .container-fluid {
+    padding: 0 2rem;
+  }
+}
