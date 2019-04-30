@@ -60,11 +60,12 @@ class Header extends React.Component {
     const { menuIsOpen, isTop, isImparables } = this.state
 
     return (
-      <Navbar bg="light" fixed="top" className={[isTop && isFrontPage ? 'navbar--transparent' : '', menuIsOpen ? 'navbar-open' : ''].join(' ')}>
+      <Navbar bg="light" fixed="top" className={[isTop && isFrontPage ? '' : '', menuIsOpen ? 'navbar-open' : ''].join(' ')}>
         <div className="container-fluid">
           <IntLink to="/" className="navbar-brand">
             <span className={['brand-logo', isImparables ? 'brand-logo--compact' : ''].join(' ')}>
-              <Logo monochrome={menuIsOpen || (isTop && isFrontPage) ? 1 : 0} />
+              <p className='brand-logo-title'>Compromís</p>
+              <p className='brand-logo-subtitle'>per Europa</p>
             </span>
             <span className={['brand-campaign', isImparables ? '' : 'brand-campaign--compact'].join(' ')}>
               #Imparables

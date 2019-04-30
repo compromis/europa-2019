@@ -24,12 +24,19 @@
     margin-left: -.4375rem;
 
     .brand-logo {
+      font-size: 1.4rem;
+      line-height: 0.1;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotate(-7deg)
+                  skew(-7deg);
       display: inline-block;
       overflow: hidden;
       width: 208px;
       transition: .25s ease-in-out;
       vertical-align: middle;
-      
+      padding-top: 1rem;
+
       svg {
         width: 208px;
         transform: translateY(-2px);
@@ -38,6 +45,12 @@
       &--compact {
         width: 50px;
       }
+
+      &-subtitle{
+        font-size: 1.15rem;
+        padding-left: 2.5rem;
+      }
+
     }
 
     .brand-campaign {
