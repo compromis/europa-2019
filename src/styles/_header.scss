@@ -28,8 +28,7 @@
       line-height: 0.1;
       text-transform: uppercase;
       font-weight: 900;
-      transform: rotate(-7deg)
-                  skew(-7deg);
+      transform: $skewed;
       display: inline-block;
       overflow: hidden;
       width: 208px;

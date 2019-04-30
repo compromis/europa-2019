@@ -1,7 +1,3 @@
-body {
-  padding-top: $nav-height;
-}
-
 html.menu-is-open {
   height: 100%;
   width: 100%;
@@ -14,6 +10,10 @@ main {
 
 .container-fluid {
   max-width: 2000px;
+}
+
+.rotated {
+  transform: $skewed;
 }
 
 @include media-breakpoint-up(md) {
