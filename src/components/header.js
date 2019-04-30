@@ -4,7 +4,6 @@ import { FormattedMessage } from "react-intl"
 import IntLink from "./elements/int-link"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
-import Logo from "./elements/logo"
 import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 
 class Header extends React.Component {
