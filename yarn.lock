@@ -2212,6 +2212,11 @@ ccount@^1.0.0, ccount@^1.0.3:
   resolved "https://registry.yarnpkg.com/ccount/-/ccount-1.0.3.tgz#f1cec43f332e2ea5a569fd46f9f5bde4e6102aff"
   integrity sha512-Jt9tIBkRc9POUof7QA/VwWd+58fKkEEfI+/t1/eOlxKM7ZhrczNzMFefge7Ai+39y1pR/pP6cI19guHy3FSLmw==
 
+chain-function@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/chain-function/-/chain-function-1.0.1.tgz#c63045e5b4b663fb86f1c6e186adaf1de402a1cc"
+  integrity sha512-SxltgMwL9uCko5/ZCLiyG2B7R9fY4pDZUw7hJ4MhirdjBLosoDqkWABi3XMucddHdLiFJMb7PD2MZifZriuMTg==
+
 chalk@1.1.3, chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-1.1.3.tgz#a8115c55e4a702fe4d150abd3872822a7e09fc98"
@@ -9383,6 +9388,16 @@ react-context-toolbox@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/react-context-toolbox/-/react-context-toolbox-2.0.2.tgz#35637287cb23f801e6ed802c2bb7a97e1f04e3fb"
   integrity sha512-tY4j0imkYC3n5ZlYSgFkaw7fmlCp3IoQQ6DxpqeNHzcD0hf+6V+/HeJxviLUZ1Rv1Yn3N3xyO2EhkkZwHn0m1A==
+
+react-css-transition-replace@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-css-transition-replace/-/react-css-transition-replace-3.0.3.tgz#23d3ed17f54e41435c0485300adb75d2e6e24aad"
+  integrity sha512-+EaY+UpHfIZuHF4IfNjQoJmL1zeewxF9P/y6q9hsAN1RTb3x+QRUTldmO4/24q2nGFYEkH+xHF5eAMEAVLYf9Q==
+  dependencies:
+    chain-function "^1.0.0"
+    dom-helpers "^3.3.1"
+    prop-types "^15.6.1"
+    warning "^3.0.0"
 
 react-dev-utils@^4.2.1:
   version "4.2.3"

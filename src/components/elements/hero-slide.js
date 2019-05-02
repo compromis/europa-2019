@@ -23,7 +23,7 @@ class HeroSlide extends React.Component {
     return (
       <div className={['hero-slide', name].join(' ')}>
         <div className="container">
-          <div style={{width: '50%'}}>
+          <div>
             {React.Children.map(children, child => child)}
           </div>
         </div>

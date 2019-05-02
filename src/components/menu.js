@@ -17,9 +17,7 @@ class Menu extends React.Component {
         <div className="container-fluid">
           <div className="row menu-header">
             <div className="col-6">
-              <IntLink to="/" className="navbar-brand">
-                <Logo />
-              </IntLink>
+              <Logo />
             </div>
             <div className="col-6">
               <button className="btn menu-button" onClick={() => { this.toggleMenu() }} aria-controls="menu">

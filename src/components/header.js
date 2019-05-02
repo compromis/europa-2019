@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { FormattedMessage } from "react-intl"
 import IntLink from "./elements/int-link"
 import Logo from "./elements/logo"
 import Navbar from "react-bootstrap/Navbar"
@@ -18,9 +17,7 @@ class Header extends React.Component {
     return (
       <Navbar bg="light" fixed="top" className={'navbar--text-' + text}>
         <div className="container-fluid">
-          <IntLink to="/" className="navbar-brand">
-            <Logo />
-          </IntLink>
+          <Logo />
           <Nav className="ml-auto">
             <ul className="menu-social d-none d-md-flex">
               <li><Nav.Link href="https://www.facebook.com/coaliciocompromis" className="social-icon facebook" target="_blank" rel="noopener"><FaFacebook /></Nav.Link></li>
