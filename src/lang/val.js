@@ -1,8 +1,8 @@
 module.exports = {
-  menu_imparables: "Imparables",
+  header_brand_1: "Compromís",
+  header_brand_2: "per Europa",
   menu_candidatura: "Candidatura",
-  menu_actua: "Actua",
-  menu_programa: "Programa",
+  menu_manifesto: "Manifiesto",
   menu_news: "Notícies",
   menu_transparency: "Transparència",
   menu_absenteeballot: "Vot per correu",

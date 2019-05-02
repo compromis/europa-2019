@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Imparables - Compromís`,
-    description: `Amb tu, podrem continuar millorant la vida de les persones. Aquest 28 d'abril, serem #Imparables`,
-    keywords: [`compromís`, `28 abril`, `eleccions autonòmiques`, `eleccions generals`, `mónica oltra`, `joan baldoví`, `mónica presidenta`],
-    author: `@compromis`,
-    image: 'https://imparables.compromis.net/images/thumbnail.jpg'
+    title: `Compromiso por Europa`,
+    description: ``,
+    keywords: [`compromís per europa`, `compromiso por europa`, `elecciones europeas`, `jordi sebastia`, `compromís`, `en marea`, `chunta arognesista`, `més per mallorca`],
+    author: `@compromisoEU`,
+    image: 'https://compromisoporeuropa.eu/images/thumbnail.jpg'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Imparables - Compromís`,
-        short_name: `Imparables`,
+        name: `Compromiso por Europa`,
+        short_name: `Compromiso EU`,
         start_url: `/`,
         background_color: `#D25C27`,
         theme_color: `#D25C27`,
@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
-        langKeyDefault: 'val',
+        langKeyDefault: 'cas',
         useLangKeyLayout: true,
         prefixDefault: false,
       }

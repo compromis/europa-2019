@@ -4,26 +4,11 @@
   padding: 6rem 0 2rem 0;
   align-content: center;
   color: $white;
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 20;
-    top: -6rem;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: repeating-radial-gradient(circle farthest-corner at right bottom,#53b2ac 0,#a4c852 23.9%,#ed9444 54.2%,#d93c67 77.9%,#bc5b9c 100%);
-    background-size: 400%;
-    animation: HeroBackground 60s ease infinite;
-    transform: skew(0, -5deg);
-    mix-blend-mode: multiply;
-  }
+  z-index: 100;
 
   .slider {
     position: relative;
-    z-index: 30;
+    z-index: 300;
     padding-bottom: 6rem;
   }
 
@@ -42,15 +27,41 @@
 
   &-background {
     position: absolute;
-    z-index: 10;
+    z-index: 200;
     top: -6rem;
-    bottom: -6rem;
+    bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(../images/slides/oranges.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-image: $europa-gradient;
+    background-size: 400%;
+    animation: HeroBackground 60s ease infinite;
+    clip: rect(auto, auto, auto, auto);
+
+    &-image {
+      position: absolute;
+      z-index: 210;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url(../images/slides/oranges.jpg);
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: right;
+      mix-blend-mode: multiply;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 220;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, $white 50%, rgba($white, 0));
+      }
+    }
   }
 }
 

@@ -5,6 +5,7 @@ import { IntlProvider } from "react-intl"
 import "intl";
 
 import Header from "../components/header"
+import Menu from "../components/menu"
 import Footer from "../components/footer"
 
 const Layout = ({ isFrontPage, locale, messages, children }) => (
@@ -21,7 +22,8 @@ const Layout = ({ isFrontPage, locale, messages, children }) => (
     render={data => (
       <IntlProvider locale={locale} messages={messages}>
         <>
-          <Header siteTitle={data.site.siteMetadata.title} locale={locale} isFrontPage={isFrontPage} />
+          <Header text="colorful" locale={locale} />
+          <Menu locale={locale} />
           <main>{children}</main>
           <Footer />
         </>

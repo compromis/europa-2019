@@ -1,10 +1,15 @@
 import React from "react"
 
-import Carousel from 'nuka-carousel'
-import HeroSlide from './elements/hero-slide'
+import Header from "./header"
+import Carousel from "nuka-carousel"
+import HeroSlide from "./elements/hero-slide"
 
-const Hero = () => (
+const Hero = ({ locale }) => (
   <div className="hero">
+    <div className="hero-background">
+      <Header text="light" locale={locale} />
+      <div className="hero-background-image"></div>
+    </div>
     <Carousel>
       <HeroSlide>
         <HeroSlide.Header>#Europa De Les Persones</HeroSlide.Header>
@@ -15,7 +20,6 @@ const Hero = () => (
         <HeroSlide.Description>Lorem ipsum</HeroSlide.Description>
       </HeroSlide>
     </Carousel>
-    <div className="hero-background"></div>
   </div>
 )
 

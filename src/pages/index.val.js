@@ -9,7 +9,7 @@ import Manifesto from "../components/manifesto"
 const IndexPage = () => (
   <Layout isFrontPage={true}>
     <SEO lang="ca" />
-    <Hero />
+    <Hero locale="ca" />
     <Manifesto />
   </Layout>
 )

@@ -1,5 +1,10 @@
 .navbar {
+  padding: 1.5rem 0;
   transition: .25s ease-in-out;
+
+  &.navbar-light { 
+    background-color: transparent !important;
+  }
 
   ul {
     list-style-type: none;
@@ -25,31 +30,18 @@
 
     .brand-logo {
       font-size: 1.4rem;
-      line-height: 0.1;
+      line-height: 1;
       text-transform: uppercase;
       font-weight: 900;
       transform: $skewed;
       display: inline-block;
-      overflow: hidden;
-      width: 208px;
       transition: .25s ease-in-out;
-      vertical-align: middle;
-      padding-top: 1rem;
 
-      svg {
-        width: 208px;
-        transform: translateY(-2px);
-      }
-
-      &--compact {
-        width: 50px;
-      }
-
-      &-subtitle{
+      &-subtitle {
+        display: block;
         font-size: 1.15rem;
         padding-left: 2.5rem;
       }
-
     }
 
     .brand-campaign {
@@ -114,9 +106,7 @@
     }
   }
 
-  &--transparent {
-    background-color: transparent !important;
-
+  &--text-light {
     .navbar-brand,
     .nav-link,
     .btn {
@@ -132,22 +122,69 @@
       border-right-color: rgba($white, .5);
     }
   }
+
+  &--text-colorful {
+    z-index: 10;
+
+    .brand-logo {
+      color: $gray-800;
+      background-image: $europa-gradient;
+      background-size: 400%;
+      animation: HeroBackground 60s ease infinite;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-link,
+    .btn {
+      color: $gray-800 !important;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+
+    .navbar-languages {
+      border-left-color: rgba($black, .5);
+      border-right-color: rgba($black, .5);
+    }
+  }
+}
+
+.menu-is-open .menu {
+  top: 0;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  background-color: $orange;
+  background: $europa-gradient;
+  background-size: 400%;
+  animation: HeroBackground 60s ease infinite;
   color: $white;
   position: fixed;
   height: 100%;
   left: 0;
   right: 0;
-  top: 0;
+  top: -100%;
   z-index: 2000;
-  padding: 5rem 0;
   transition: .5s ease-in;
   overflow-y: scroll;
+
+  &-header {
+    margin: 2rem 0;
+  }
+
+  .navbar-brand {
+    color: $white;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 2.5rem;
+  }
 
   .social-icon {
     display: inline-block;
@@ -186,10 +223,6 @@
     }
   }
 
-  &-main {
-    margin-top: -1.5rem !important;
-  }
-
   &-social {
     justify-items: end;
     align-self: end;
@@ -218,42 +251,28 @@
     }
   }
 
+  .menu-button {
+    position: absolute;
+    color: $white;
+    right: 0;
+  }
+
   &-link {
     display: block;
     text-transform: uppercase;
     font-family: $font-family-headings;
-    font-size: 5rem;
+    font-weight: bold;
+    font-size: 2rem;
     color: $white;
     text-decoration: none;
     line-height: 100%;
-
-    span {
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: .25rem;
-        width: 0;
-        background: $white;
-        transition: .25s ease-in-out;
-      }
-    }
+    transition: .25s ease-in-out;
 
     &:hover {
       color: $white;
       text-decoration: none;
-
-      span::after {
-        width: 100%;
-      }
+      opacity: .5;
     }
-  }
-
-  &-closed {
-    top: -100%;
   }
 }
 
@@ -278,10 +297,16 @@
 
 @include media-breakpoint-up(lg) {
   .menu {
-    padding-top: 8rem;
+    &-header {
+      margin: 2rem 0;
+
+      .navbar-brand {
+        margin: 2rem 0;
+      }
+    }
 
     &-link {
-      font-size: 7rem;
+      font-size: 5rem;
     }
   }
 }
