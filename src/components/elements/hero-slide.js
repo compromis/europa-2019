@@ -1,4 +1,6 @@
 import React from "react"
+import ReactFBLike from 'react-fb-like'
+import { TwitterShareButton } from "react-twitter-embed"
 
 const Header = ({ children }) => (
   <h3 className="hero-slide-header rotated">{ children }</h3>
@@ -25,6 +27,13 @@ class HeroSlide extends React.Component {
         <div className="container">
           <div>
             {React.Children.map(children, child => child)}
+            <div className="hero-slide-share">
+              <TwitterShareButton
+                url={'https://compromisoporeuropa.com'}
+                options={{ text: '#CompromisoPorEuropa', via: 'compromisoEU' }}
+              />
+              <ReactFBLike href="https://compromisoporeuropa.com" layout="button_count" language="es_ES" appId="603979510082106" version="v2.12" />
+            </div>
           </div>
         </div>
       </div>

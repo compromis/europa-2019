@@ -16,16 +16,45 @@
     &-header {
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 2rem;
       margin: 3rem 0 2rem 0;
       line-height: 1;
       max-width: 600px;
     }
 
     &-description {
-      margin-left: 2.5rem;
+      margin-left: 1.8rem;
       max-width: 800px;
     }
+
+    &-share {
+      margin-left: 2.5rem;
+
+      & > div {
+        display: inline-block;
+        margin-right: .5rem;
+      }
+
+      .fb-like {
+        position: relative;
+        top: -7px;
+      }
+    }
+  }
+
+  &-control {
+    font-size: 2rem;
+    color: $white;
+    margin: 0 2rem;
+
+    &:hover {
+      color: $white;
+      opacity: .5;
+    }
+  }
+
+  .paging-dot {
+    background: $white !important;
   }
 
   &-background {
@@ -36,7 +65,7 @@
     left: 0;
     right: 0;
     background-image: $europa-gradient;
-    background-size: 400%;
+    background-size: 600%;
     animation: HeroBackground 60s ease infinite;
     clip: rect(auto, auto, auto, auto);
 
@@ -67,41 +96,16 @@
   }
 }
 
-.cross-fade-leave {
-  opacity: 1;
-}
-.cross-fade-leave.cross-fade-leave-active {
-  opacity: 0;
-  transition: opacity 1s ease-in;
-}
+@include media-breakpoint-up(lg) {
+  .hero {
+    &-slide {
+      &-header {
+        font-size: 3rem;
+      }
 
-.cross-fade-enter {
-  opacity: 0;
-}
-.cross-fade-enter.cross-fade-enter-active {
-  opacity: 1;
-  transition: opacity 1s ease-in;
-}
-
-.cross-fade-height {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100% !important;
-}
-
-@keyframes HeroBackground { 
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% { 
-    background-position: 100% 50%;
-  }
-
-  100% { 
-    background-position: 0% 50%;
+      &-description {
+        margin-left: 2.5rem;
+      }
+    }
   }
 }

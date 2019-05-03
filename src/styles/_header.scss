@@ -1,5 +1,5 @@
 .navbar {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   transition: .25s ease-in-out;
 
   &.navbar-light { 
@@ -26,7 +26,7 @@
 
   &-brand {
     padding: 0;
-    margin-left: -.4375rem;
+    margin-left: .5rem;
 
     .brand-logo {
       font-size: 1.4rem;
@@ -123,7 +123,7 @@
     }
   }
 
-  &--text-colorful {
+  &.navbar--text-colorful {
     z-index: 10;
 
     .brand-logo {
@@ -149,6 +149,10 @@
       border-right-color: rgba($black, .5);
     }
   }
+}
+
+.navbar.navbar--text-colorful {
+  background-color: $white !important;
 }
 
 .menu-is-open .menu {
@@ -278,14 +282,21 @@
 
 @include media-breakpoint-up(md) {
   .navbar {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 1.5rem 0;
 
     &-languages {
       padding: 0 1rem !important;
       margin: 0 1rem !important;
       border-left: 1px $gray-500 solid;
       border-right: 1px $gray-500 solid;
+    }
+
+    &-brand {
+      margin-left: 0;
+    }
+
+    &.navbar.navbar--text-colorful {
+      background-color: transparent !important;
     }
 
     .container-fluid {
@@ -298,11 +309,7 @@
 @include media-breakpoint-up(lg) {
   .menu {
     &-header {
-      margin: 2rem 0;
-
-      .navbar-brand {
-        margin: 2rem 0;
-      }
+      margin: 2rem 0 4rem 0;
     }
 
     &-link {

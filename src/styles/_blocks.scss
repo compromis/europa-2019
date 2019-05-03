@@ -1,0 +1,14 @@
+.block {
+  h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    color: $gray-800;
+    background-image: $europa-gradient;
+    background-size: 600%;
+    animation: HeroBackground 60s ease infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

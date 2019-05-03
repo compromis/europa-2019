@@ -1,6 +1,7 @@
 import React from "react"
 import Carousel from "nuka-carousel"
 import ReactCSSTransitionReplace from "react-css-transition-replace"
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa"
 
 import Header from "./header"
 import HeroSlide from "./elements/hero-slide"
@@ -36,6 +37,12 @@ class Hero extends React.Component {
           ref="hero"
           slideIndex={this.state.slideIndex}
           afterSlide={slideIndex => this.setState({ slideIndex })}
+          renderCenterLeftControls={({ previousSlide }) => (
+            <button className="btn hero-control d-none d-md-block" onClick={previousSlide}><FaChevronLeft /></button>
+          )}
+          renderCenterRightControls={({ nextSlide }) => (
+            <button className="btn hero-control d-none d-md-block" onClick={nextSlide}><FaChevronRight /></button>
+          )}
           autoplay>
           <HeroSlide>
             <HeroSlide.Header>#Europa De Les Persones</HeroSlide.Header>

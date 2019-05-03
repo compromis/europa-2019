@@ -8,49 +8,6 @@ $green: #477F50;
 $primary: $orange;
 $europa-gradient: repeating-radial-gradient(circle farthest-corner at right bottom,#53b2ac 0,#a4c852 23.9%,#ed9444 54.2%,#d93c67 77.9%,#bc5b9c 100%);
 
-// Programa sections
-$programa: (
-  'tracte-just': (
-    'background': $orange,
-  ),
-  'serveis-socials': (
-    'background': #ec6555,
-  ),
-  'educacio': (
-    'background': #00bdaa,
-  ),
-  'salut': (
-    'background': #48acd5,
-  ),
-  'ocupacio': (
-    'background': #2bb8d1,
-  ),
-  'territori': (
-    'background': #db8354,
-  ),
-  'model-economic': (
-    'background': #f99b1c,
-  ),
-  'drets-ciutadania': (
-    'background': #a8026f,
-  ),
-  'joventut': (
-    'background': #db2d43,
-  ),
-  'feminismes': (
-    'background': #8050a0,
-  ),
-  'agricultura': (
-    'background': #e75b20,
-  ),
-  'cultura-esports': (
-    'background': #f99b1c,
-  ),
-  'medi-ambient': (
-    'background': #388e3c,
-  ),
-);
-
 // Fonts
 $font-family-sans-serif: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-headings: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
