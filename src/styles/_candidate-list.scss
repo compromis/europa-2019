@@ -1,9 +1,12 @@
 .candidate-list {
-  h3 {
+  h2 {
     font-weight: bold;
-    font-size: 1.35rem;
-    margin-bottom: 0;
-    cursor: pointer;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-weight: 900;
   }
 
   p {

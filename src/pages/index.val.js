@@ -11,6 +11,7 @@ const IndexPage = () => (
     <SEO lang="ca" />
     <Hero locale="ca" />
     <Manifesto />
+    <CandidateList />
   </Layout>
 )
 
