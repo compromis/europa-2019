@@ -1,7 +1,8 @@
 .hero {
   position: relative;
   display: flex;
-  padding: 6rem 0 2rem 0;
+  padding: 6rem 0;
+  margin-bottom: -3rem;
   align-content: center;
   color: $white;
   z-index: 100;
@@ -67,7 +68,7 @@
     background-image: $europa-gradient;
     background-size: 600%;
     animation: HeroBackground 60s ease infinite;
-    clip: rect(auto, auto, auto, auto);
+    clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
 
     &-image {
       position: absolute;
