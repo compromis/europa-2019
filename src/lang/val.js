@@ -49,5 +49,5 @@ module.exports = {
   news_header: "Notícies",
   news_more_on: "Més notícies en compromis.net",
   footer_follow: "Segueix l'activitat de",
-  footer_campaign: "{imparables} és una campanya de {compromis}"
+  footer_campaign: "{name} és una iniciativa conjunta de"
 };

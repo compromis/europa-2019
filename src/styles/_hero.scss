@@ -68,7 +68,7 @@
     background-image: $europa-gradient;
     background-size: 600%;
     animation: HeroBackground 60s ease infinite;
-    clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+    clip-path: polygon(0rem 0, 3000px 0, 3000px 65%, 0rem 100%);
 
     &-image {
       position: absolute;
@@ -91,14 +91,24 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(to right, $white 50%, rgba($white, 0));
+        background: linear-gradient(to right, $white, rgba($white, 0));
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .hero {
+    &-background-image::after {
+      background: linear-gradient(to right, $white 50%, rgba($white, 0));
     }
   }
 }
 
 @include media-breakpoint-up(lg) {
   .hero {
+    padding-bottom: 9rem;
+
     &-slide {
       &-header {
         font-size: 3rem;

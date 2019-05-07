@@ -1,6 +1,10 @@
 .manifesto {
-  p {
+  &-text {
     margin-left: 2.5rem;
+  }
+
+  &-sidebar {
+    margin-top: 10rem;
   }
 }
 
