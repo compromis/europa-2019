@@ -1,6 +1,5 @@
 import React from "react"
 import { FormattedMessage } from "react-intl"
-import Logo from "./elements/logo"
 
 const Footer = () => (
   <div className="footer">

@@ -1,13 +1,25 @@
 .manifesto {
+  margin-top: 2rem;
+
   &-text {
     margin-left: 2.5rem;
   }
 
   &-sidebar {
-    margin-top: 10rem;
+    margin: 2rem 0 0 2.5rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .manifesto {
+    margin-top: 0;
   }
 }
 
 @include media-breakpoint-up(lg) {
-
+  .manifesto {
+    &-sidebar {
+      margin-top: 10rem;
+    }
+  }
 }
