@@ -28,8 +28,8 @@ class Menu extends React.Component {
           <div className="row">
             <div className="col-lg-12">
               <ul className="menu-main">
-                <li><IntLink className="menu-link" to="/candidatura"><span><FormattedMessage id="menu_candidatura" /></span></IntLink></li>
-                <li><IntLink className="menu-link" to="/programa"><span><FormattedMessage id="menu_manifesto" /></span></IntLink></li>
+                <li><IntLink className="menu-link" to="/candidatura" onClick={() => this.toggleMenu()}><span><FormattedMessage id="menu_candidatura" /></span></IntLink></li>
+                <li><IntLink className="menu-link" to="/manifest" onClick={() => this.toggleMenu()}><span><FormattedMessage id="menu_manifesto" /></span></IntLink></li>
               </ul>
               <ul className="mt-4 menu-social">
                 <li><a href="https://www.facebook.com/coaliciocompromis" className="social-icon facebook" target="_blank" rel="noopener noreferrer"><FaFacebook /></a></li>
@@ -38,7 +38,7 @@ class Menu extends React.Component {
                 <li><a href="https://compromis.net/whatsapp" className="social-icon whatsapp" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a></li>
               </ul>
               <ul className="mt-4 menu-languages">
-                { locale === 'es' ? <li><IntLink to="/" locale="ca">En valencià</IntLink></li> : '' }
+                { locale === 'es' ? <li><IntLink to="/val" locale="ca">En valencià</IntLink></li> : '' }
                 { locale === 'ca' ? <li><IntLink to="/" locale="es">En castellano</IntLink></li> : '' }
               </ul>
               <ul className="mt-4 menu-languages">

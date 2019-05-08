@@ -4,7 +4,7 @@ import { injectIntl, intlShape } from "react-intl"
 import { Link } from "gatsby"
 
 const IntLink = ({ to, locale, intl, children, ...props }) => {
-  const lang = locale ? (locale === 'es' ? '/cas' : '') : (intl.locale === 'es' ? '/cas' : '')
+  const lang = locale ? (locale === 'es' ? '/val' : '') : (intl.locale === 'es' ? '/' : '')
   return (
     <Link to={`${lang}${to}`} {...props}>{children}</Link>
   )

@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import IntLink from "./elements/int-link"
 import Logo from "./elements/logo"
 import Navbar from "react-bootstrap/Navbar"
@@ -26,8 +27,8 @@ class Header extends React.Component {
               <li><Nav.Link href="https://compromis.net/whatsapp" className="social-icon whatsapp" target="_blank" rel="noopener"><FaWhatsapp /></Nav.Link></li>
             </ul>
             <ul className="navbar-languages">
-              { locale === 'es' ? <li><IntLink to="/" locale="ca" className="nav-link"><span className="d-md-none">VAL</span><span className="d-none d-md-inline">Valencià</span></IntLink></li> : '' }
-              { locale === 'ca' ? <li><IntLink to="/" locale="es" className="nav-link"><span className="d-md-none">CAS</span><span className="d-none d-md-inline">Castellano</span></IntLink></li> : '' }
+              { locale === 'es' ? <li><Link to="/val" locale="ca" className="nav-link"><span className="d-md-none">VAL</span><span className="d-none d-md-inline">Valencià</span></Link></li> : '' }
+              { locale === 'ca' ? <li><Link to="/" locale="es" className="nav-link"><span className="d-md-none">CAS</span><span className="d-none d-md-inline">Castellano</span></Link></li> : '' }
             </ul>
             <button className="btn menu-button" onClick={() => { this.toggleMenu() }} aria-controls="menu">
               <span className="d-none d-md-inline">Menú</span> <FaBars />
