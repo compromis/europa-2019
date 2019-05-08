@@ -1,5 +1,11 @@
 import React from "react"
 
+import LogoCaballas from "../images/logos/caballas.png"
+import LogoCPM from "../images/logos/cpm.png"
+import LogoIniciativa from "../images/logos/iniciativa.png"
+import LogoIzqAndalucista from "../images/logos/izqandalucista.png"
+import VerdesEuropa from "../images/logos/verdeseuropa.png"
+
 class Manifesto extends React.Component {
   constructor (props) {
     super(props)
@@ -49,13 +55,18 @@ class Manifesto extends React.Component {
           </div>
           <div className="col-lg-4">
             <div className="manifesto-sidebar">
-              <iframe title="Comprmomís" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaoltra%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
-              <iframe title="En Marea" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaoltra%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
-              <iframe title="Nueva Canarias" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaoltra%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
-              <iframe title="Més per Mallorca" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaoltra%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
-              <iframe title="Chunta Aragonesista" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaoltra%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
-              <iframe title="Caballas" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaoltra%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
-              <iframe title="CPM" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaoltra%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
+              <iframe title="Comprmomís" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcoaliciocompromis%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
+              <iframe title="En Marea" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FEnMareaGal%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
+              <iframe title="Nueva Canarias" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNuevaCanariasLPGC%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
+              <iframe title="Més per Mallorca" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmespermallorca%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
+              <iframe title="Chunta Aragonesista" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FChunta-Aragonesista-101179693581%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
+              <div className="coalition-logos">
+                <img src={LogoCaballas} alt="Caballas" />
+                <img src={LogoCPM} alt="CPM" />
+                <img src={LogoIniciativa} alt="Iniciativa Pueblo Andaluz" />
+                <img src={LogoIzqAndalucista} alt="Izquierda Andalucista" />
+                <img src={VerdesEuropa} alt="Verdes de Europa" />
+              </div>
             </div>
           </div>
         </div>

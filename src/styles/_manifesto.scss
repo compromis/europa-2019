@@ -10,6 +10,17 @@
   }
 }
 
+.coalition-logos {
+  img {
+    width: 20%;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
 @include media-breakpoint-up(md) {
   .manifesto {
     margin-top: 0;
