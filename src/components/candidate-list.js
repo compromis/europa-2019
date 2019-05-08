@@ -1,10 +1,10 @@
 import React from "react"
 import CandidateItem from "./candidate-list-item"
 
-import AitanaPhoto from "../images/candidates/aitana-mas.jpg"
-import FranPhoto from "../images/candidates/fran-ferri.jpg"
-import MarzaPhoto from "../images/candidates/vicent-marza.jpg"
-import IgnasiPhoto from "../images/candidates/ignasi-candela.jpg"
+import SebastiaPhoto from "../images/candidates/jordi-sebastia.jpg"
+import MariaPhoto from "../images/candidates/maria-senra.jpg"
+import WeberPhoto from "../images/candidates/alice-weber.jpg"
+import FanequePhoto from "../images/candidates/faneque.jpg"
 
 const CandidateList = () => (
   <div className="block candidate-list container">
@@ -15,30 +15,16 @@ const CandidateList = () => (
     </div>
     <div className="row candidate-list-row">
       <div className="col-lg-3">    
-        <CandidateItem image={AitanaPhoto} name="Aitana Mas" id="aitanamas" social={{facebook: 'aitana.mas', twitter: 'AitanaMas', instagram: 'aitana_mas'}} size="sm" />
+        <CandidateItem image={SebastiaPhoto} name="Jordi Sebastià" id="jordisebastia" social={{facebook: 'jordi.s.talavera', twitter: 'Sebastia_Jordi', website:'https://imparables.compromis.net/', webshort:'Compromis'}} size="sm" />
       </div>
       <div className="col-lg-3">    
-        <CandidateItem image={FranPhoto} name="Fran Ferri" id="franferri" social={{facebook: 'fraferfa', twitter: 'franferri_', instagram: 'franferri'}} size="sm" />
+        <CandidateItem image={MariaPhoto} name="Lidia Senra" id="mariasenra" social={{facebook: 'EnMareaGal', twitter: 'LidiaSenra', website:'https://enmarea.gal/', webshort:'En Marea'}} size="sm" />
       </div>
       <div className="col-lg-3">    
-        <CandidateItem image={MarzaPhoto} name="Vicent Marzà" id="vicentmarza" social={{facebook: 'vicentmarzaibanez', twitter: 'VicentMarza', instagram: 'vicentmarza'}} size="sm" />
+        <CandidateItem image={FanequePhoto} name="Faneque Hernández" id="fanequehernandez" social={{facebook: 'faneque.hernandez', twitter: 'Nueva_canarias', website:'http://www.nuevacanarias.org/', webshort:'Nueva Canarias'}} size="sm" />
       </div>
       <div className="col-lg-3">
-        <CandidateItem image={IgnasiPhoto} name="Ignasi Candela" id="ignasicandela" social={{facebook: 'IgnasiCandelaSerna', twitter: 'IgnasiCandela', instagram: 'ignasi_candela_serna'}} size="sm" />
-      </div>
-    </div>
-    <div className="row candidate-list-row">
-      <div className="col-lg-3">    
-        <CandidateItem image={AitanaPhoto} name="Aitana Mas" id="aitanamas" social={{facebook: 'aitana.mas', twitter: 'AitanaMas', instagram: 'aitana_mas'}} size="sm" />
-      </div>
-      <div className="col-lg-3">    
-        <CandidateItem image={FranPhoto} name="Fran Ferri" id="franferri" social={{facebook: 'fraferfa', twitter: 'franferri_', instagram: 'franferri'}} size="sm" />
-      </div>
-      <div className="col-lg-3">    
-        <CandidateItem image={MarzaPhoto} name="Vicent Marzà" id="vicentmarza" social={{facebook: 'vicentmarzaibanez', twitter: 'VicentMarza', instagram: 'vicentmarza'}} size="sm" />
-      </div>
-      <div className="col-lg-3">
-        <CandidateItem image={IgnasiPhoto} name="Ignasi Candela" id="ignasicandela" social={{facebook: 'IgnasiCandelaSerna', twitter: 'IgnasiCandela', instagram: 'ignasi_candela_serna'}} size="sm" />
+        <CandidateItem image={WeberPhoto} name="Alice Weber" id="aliceweber" social={{facebook: 'alice.weber.56', twitter: 'NaAliceWeber', website:'http://latevadecisio.cat/', webshort:'Més per Mallorca'}} size="sm" />
       </div>
     </div>
   </div>

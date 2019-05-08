@@ -47,7 +47,7 @@
 
     a {
       display: inline-block;
-      padding: .25rem .75rem;
+      padding-right: 0.25rem;
       border-radius: .25rem;
       margin-bottom: .5rem;
       color: $white;
@@ -59,26 +59,35 @@
   }
 
   .facebook a {
-    background: #3b5998;
+    color: #3b5998;
 
     &:hover {
-      background: darken(#3b5998, 20%);
+      color: darken(#3b5998, 20%);
     }
   }
 
   .twitter a {
-    background: #38A1F3;
+    color: #38A1F3;
 
     &:hover {
-      background: darken(#38A1F3, 20%);
+      color: darken(#38A1F3, 20%);
     }
   }
 
   .instagram a {
-    background: #e1306c;
+    color: #e1306c;
 
     &:hover {
-      background: darken(#e1306c, 20%);
+      color: darken(#e1306c, 20%);
+    }
+  }
+
+  .website a {
+    color: #e1306c;
+    font-size: 1.15rem;
+
+    &:hover {
+      color: darken(#e1306c, 20%);
     }
   }
 }
