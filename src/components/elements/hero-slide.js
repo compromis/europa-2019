@@ -32,7 +32,7 @@ class HeroSlide extends React.Component {
                 url={'https://compromisoporeuropa.eu'}
                 options={{ text: '#CompromisoPorEuropa', via: 'compromisoEU' }}
               />
-              <ReactFBLike href="https://compromisoporeuropa.eu" layout="button_count" language="es_ES" appId="603979510082106" version="v2.12" />
+              <ReactFBLike href="https://www.compromisoporeuropa.eu" layout="button_count" language="es_ES" appId="603979510082106" version="v2.12" />
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Compromiso por Europa`,
-    description: ``,
-    keywords: [`compromís per europa`, `compromiso por europa`, `elecciones europeas`, `jordi sebastia`, `compromís`, `en marea`, `chunta arognesista`, `més per mallorca`],
+    description: `Por una Europa de las personas`,
+    keywords: [`compromís per europa`, `compromiso por europa`, `elecciones europeas`, `jordi sebastia`, `compromís`, `en marea`, `chunta arognesista`, `més per mallorca`,`nueva canarias`],
     author: `@compromisoEU`,
-    image: 'https://compromisoporeuropa.eu/images/thumbnail.jpg'
+    image: 'https://www.compromisoporeuropa.eu/images/thumbnail.jpg'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
