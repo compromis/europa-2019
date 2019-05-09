@@ -22,7 +22,7 @@ class Manifesto extends React.Component {
   }
 
   render () {
-    const { textExpanded } = this.state
+    const textExpanded = this.props.forceTextExpanded ? true : this.state.textExpanded
 
     return (
       <section className="block manifesto container">
@@ -34,7 +34,7 @@ class Manifesto extends React.Component {
               <p>Este modelo no ha sido capaz de responder a los sectores sociales y territorios más vulnerables de la Unión Europea.</p>
               <p>La Unión Europea ha constituido un modelo económico-social singular fraguado en estos setenta últimos años que defendía el Estado de Bienestar. Sin embargo, las políticas neoliberales, basadas fundamentalmente en planteamientos económicos que se están imponiendo en las últimas décadas, han conseguido desmantelar progresivamente la estructura pública de servicios sociales y ha dado entrada a injusticias y privilegios insoportables.</p>
               <p>Un nuevo poder se está afianzando en la Unión Europea con la connivencia de los gobiernos conservadores, liberales y populistas de sus estados miembros, que trabajan a su servicio en vez del de sus electores y en que la corrupción, las puertas giratorias y la discriminación afloran por doquier.</p>
-              
+
               <div id="manifestoMore" className="manifesto-text-more" style={{display: textExpanded ? 'block' : 'none'}}>
                 <p>Pero es que además, en apenas dos décadas, entre la desinformación, la apatía y la indiferencia inducidas, Europa ha cambiado radicalmente su rumbo y se está colocando en las antípodas de todo lo que en el pasado representó.</p>
                 <p>Un poder uniformador, centralista, burocrático, explotador, especulador y carente de consideración por las personas, vivan éstas en Europa o en cualquier parte del mundo.</p>
@@ -50,7 +50,7 @@ class Manifesto extends React.Component {
                 <p>Y para lograrlo se comprometen a configurar una coalición electoral para las próximas Elecciones Europeas, a celebrar en el año 2019, bajos estos principios básicos.</p>
               </div>
 
-              <button className="btn btn-outline-secondary btn-sm" onClick={() => this.toggleText()} aria-expanded={textExpanded} aria-controls="manifestoMore">{ !textExpanded ? 'Seguir leyendo...' : 'Mostrar menos' }</button>
+              { !this.props.forceTextExpanded ? <button className="btn btn-outline-secondary btn-sm" onClick={() => this.toggleText()} aria-expanded={textExpanded} aria-controls="manifestoMore">{ !textExpanded ? 'Seguir leyendo...' : 'Mostrar menos' }</button> : '' }
             </div>
           </div>
           <div className="col-lg-4">

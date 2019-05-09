@@ -25,7 +25,7 @@ module.exports = {
   candidates_vicentmarza_bio: "Nacido el 3 de marzo de 1983 en Castelló. Conseller de Educación, Investigación, Cultura y Deporte y diputado en las Corts Valencianes en la última legislatura, ha formado parte de la Junta Directiva 'd'Escola Valenciana Federació d'Associacions per la Llengua' y ha participado en el comité organizador del IV Congreso 'Escola Valenciana i Societat', en el I Congreso Internaional de Interacción Comunicativa y Enseñanza de Lenguas y colabora con la 'Enciclopèdia Catalana' elaborando las  actualización de nuevas entradas sobre el País Valencià. Licenciado en Magisterio con el máster de Pedagogía social y comunitaria: liderazgo de la transformación socioeducativa. Ha sido profesor de primaria y de inglés en los colegios Carles Salvador de Castelló de la Plana, Margarida Xirgú de Badalona y Gaetà Huguet de Castelló. También ha sido profesor de Francés en la escuela Campanar de València.",
   candidates_ignasicandela_bio: "-",
   candidates_martasorli_bio: "-",
-  candidates_all: "Todos los candidatos y candidatas...",
+  candidates_all: "Lista completa al Parlamento Europeo",
   programa_download: "Libro de medidas",
   actions_title: "¡Actúa!",
   actions_donate_title: "Ayúdanos a hacer la campaña",

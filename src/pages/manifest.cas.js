@@ -7,7 +7,7 @@ import Manifesto from "../components/manifesto"
 const ManifestoPage = () => (
   <Layout>
     <SEO lang="es" title="Manifiesto" />
-    <Manifesto />
+    <Manifesto forceTextExpanded={true} />
   </Layout>
 )
 

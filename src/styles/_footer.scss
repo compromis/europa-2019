@@ -54,6 +54,8 @@
 
 @include media-breakpoint-up(lg) {
   .footer {
+    margin-top: 2rem;
+
     p {
       text-align: right;
     }

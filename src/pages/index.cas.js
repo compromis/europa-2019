@@ -12,7 +12,7 @@ const IndexPage = () => (
     <SEO lang="es" />
     <Hero locale="es" />
     <Manifesto />
-    <CandidateList />
+    <CandidateList showMore={true} />
   </Layout>
 )
 

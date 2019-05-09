@@ -37,7 +37,6 @@ class CandidateItem extends React.Component {
         </div>
         <div className="candidate-list-item-name">
           <h3>{name}</h3>
-          <p className="candidate-list-item-description"></p>
           <div className={['candidate-list-item-bio', bioDisplayed ? '' : 'd-none'].join(' ')}>
             { social ? 
               <div className="candidate-social">

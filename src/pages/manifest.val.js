@@ -8,7 +8,7 @@ import CandidateList from "../components/candidate-list"
 const CandidaturaPage = () => (
   <Layout>
     <SEO lang="ca" title="Candidatura" />
-    <CandidateList />
+    <CandidateList forceTextExpanded={true} />
   </Layout>
 )
 

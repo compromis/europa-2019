@@ -10,6 +10,7 @@ const CandidaturaPage = () => (
   <Layout>
     <SEO lang="es" title="Candidatura" />
     <CandidateList />
+    <hr />
     <CandidateNames />
   </Layout>
 )

@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import IntLink from "./elements/int-link"
 import Logo from "./elements/logo"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
@@ -23,10 +22,8 @@ class Header extends React.Component {
             <ul className="menu-social d-none d-md-flex">
               <li><Nav.Link href="https://www.facebook.com/coaliciocompromis" className="social-icon facebook" target="_blank" rel="noopener"><FaFacebook /></Nav.Link></li>
               <li><Nav.Link href="https://twitter.com/compromis" className="social-icon twitter" target="_blank" rel="noopener"><FaTwitter /></Nav.Link></li>
-              <li><Nav.Link href="https://www.instagram.com/compromis_net/" className="social-icon instagram" target="_blank" rel="noopener"><FaInstagram /></Nav.Link></li>
-              <li><Nav.Link href="https://compromis.net/whatsapp" className="social-icon whatsapp" target="_blank" rel="noopener"><FaWhatsapp /></Nav.Link></li>
             </ul>
-            <ul className="navbar-languages">
+            <ul className="navbar-languages d-none">
               { locale === 'es' ? <li><Link to="/val" locale="ca" className="nav-link"><span className="d-md-none">VAL</span><span className="d-none d-md-inline">Valencià</span></Link></li> : '' }
               { locale === 'ca' ? <li><Link to="/" locale="es" className="nav-link"><span className="d-md-none">CAS</span><span className="d-none d-md-inline">Castellano</span></Link></li> : '' }
             </ul>
