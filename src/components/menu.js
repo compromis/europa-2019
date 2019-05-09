@@ -2,7 +2,7 @@ import React from "react"
 import { FormattedMessage } from "react-intl"
 import IntLink from "./elements/int-link"
 import Logo from "./elements/logo"
-import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaTimes } from "react-icons/fa"
+import { FaFacebook, FaTwitter, FaTimes } from "react-icons/fa"
 
 class Menu extends React.Component {
   toggleMenu () {
@@ -10,7 +10,7 @@ class Menu extends React.Component {
   }
 
   render () {
-    const { locale } = this.props
+    // const { locale } = this.props
 
     return (
       <div id="menu" className="menu d-print-none">

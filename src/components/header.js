@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Logo from "./elements/logo"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
-import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaBars } from "react-icons/fa"
+import { FaFacebook, FaTwitter, FaBars } from "react-icons/fa"
 
 class Header extends React.Component {
   toggleMenu () {

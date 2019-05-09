@@ -45,32 +45,32 @@ class Hero extends React.Component {
           )}
           autoplay>
           <HeroSlide>
-            <HeroSlide.Header>Per una Europa feminista</HeroSlide.Header>
-            <HeroSlide.Description>Apostamos por la transición ecológica de la economía (New Deal Verde) hacia otro modelo productivo y de consumo basado en la economía social, sostenible y del bien común, es decir una prosperidad compartida. Financiaremos la creación de empleos verdes y decentes, además de I+D+i, con una reforma fiscal que tase ante todo los recursos y los capitales.</HeroSlide.Description>
+            <HeroSlide.Header>#EUROPACERCANA</HeroSlide.Header>
+            <HeroSlide.Description>Por una Europa más cercana. Nos comprometemos a trasladar a las instituciones europeas las propuestas de la ciudadanía y rendir cuentas de nuestra actividad de forma periódica. El Parlamento Europeo no puede ser un retiro dorado para las viejas glorias del bipartidismo.</HeroSlide.Description>
           </HeroSlide>
           <HeroSlide>
-            <HeroSlide.Header>Per una Europa sostenible</HeroSlide.Header>
-            <HeroSlide.Description>Reclamamos una Carta de los derechos fundamentales sociales para garantizar educación, sanidad, justicia y medio ambiente para toda/os, incluidas las personas migrantes. Priorizamos la lucha contra la pobreza y la exclusión social e impulsaremos la defensa de la renta básica universal, así como una cartera de servicios sociales mínimos para facilitar la autonomía personal y la integración de las personas con diversidad funcional física y/o psíquica.</HeroSlide.Description>
+            <HeroSlide.Header>#EUROPADELASPERSONAS</HeroSlide.Header>
+            <HeroSlide.Description>Por una Europa de las personas. Lucharemos contra la privatización de las pensiones públicas que impulsa la gran coalición de socialistas y populares con su modelo neoliberal. Todas las personas deben tener derecho a una pensión digna.</HeroSlide.Description>
           </HeroSlide>
           <HeroSlide>
-            <HeroSlide.Header>Per una Europa social</HeroSlide.Header>
-            <HeroSlide.Description>Reivindicamos la Europa de los Pueblos, y el apoyo y respeto de la UE a su diversidad nacional, cultural y lingüística, incluyendo las minorías y naciones sin Estado. Rechazamos el recorte a su autonomía y procesos de decisión democráticos y reclamamos la participación real y efectiva de las unidades subestatales en la toma de decisiones europeas, con especial atención a las Regiones Europeas Ultraperiféricas dotándolas de su propia circunscripción electoral.</HeroSlide.Description>
+            <HeroSlide.Header>#EUROPAFEMINISTA</HeroSlide.Header>
+            <HeroSlide.Description>Por una Europa feminista. Impulsaremos una Directiva Europea contra la Violencia Machista porque no queremos ni una víctima más.</HeroSlide.Description>
           </HeroSlide>
           <HeroSlide>
-            <HeroSlide.Header>Per una Europa social</HeroSlide.Header>
-            <HeroSlide.Description>Reivindicamos la Europa de los Pueblos, y el apoyo y respeto de la UE a su diversidad nacional, cultural y lingüística, incluyendo las minorías y naciones sin Estado. Rechazamos el recorte a su autonomía y procesos de decisión democráticos y reclamamos la participación real y efectiva de las unidades subestatales en la toma de decisiones europeas, con especial atención a las Regiones Europeas Ultraperiféricas dotándolas de su propia circunscripción electoral.</HeroSlide.Description>
+            <HeroSlide.Header>#EUROPASOSTENIBLE</HeroSlide.Header>
+            <HeroSlide.Description>Por una Europa sostenible. Más ambición en la lucha contra el cambio climático ante la avaricia los poderosos. Necesitamos un mínimo del 35% de energía renovable en 2030.</HeroSlide.Description>
           </HeroSlide>
           <HeroSlide>
-            <HeroSlide.Header>Per una Europa social</HeroSlide.Header>
-            <HeroSlide.Description>Reivindicamos la Europa de los Pueblos, y el apoyo y respeto de la UE a su diversidad nacional, cultural y lingüística, incluyendo las minorías y naciones sin Estado. Rechazamos el recorte a su autonomía y procesos de decisión democráticos y reclamamos la participación real y efectiva de las unidades subestatales en la toma de decisiones europeas, con especial atención a las Regiones Europeas Ultraperiféricas dotándolas de su propia circunscripción electoral.</HeroSlide.Description>
+            <HeroSlide.Header>#EUROPASOCIAL</HeroSlide.Header>
+            <HeroSlide.Description>Por una Europa social. Exigiremos una renta mínima europea. La Unión Europea produce riqueza pero no bienestar, tenemos un 23% de pobreza y es una vergüenza.</HeroSlide.Description>
           </HeroSlide>
           <HeroSlide>
-            <HeroSlide.Header>Per una Europa social</HeroSlide.Header>
-            <HeroSlide.Description>Reivindicamos la Europa de los Pueblos, y el apoyo y respeto de la UE a su diversidad nacional, cultural y lingüística, incluyendo las minorías y naciones sin Estado. Rechazamos el recorte a su autonomía y procesos de decisión democráticos y reclamamos la participación real y efectiva de las unidades subestatales en la toma de decisiones europeas, con especial atención a las Regiones Europeas Ultraperiféricas dotándolas de su propia circunscripción electoral.</HeroSlide.Description>
+            <HeroSlide.Header>#NOAPARAÍSOSFISCALES</HeroSlide.Header>
+            <HeroSlide.Description>Por una política fiscal europea común al servicio de las personas. No a los paraísos fiscales dentro la UE que permiten ahorrarse impuestos a las grandes multinacionales (Luxemburgo, Países Bajos, Irlanda).</HeroSlide.Description>
           </HeroSlide>
           <HeroSlide>
-            <HeroSlide.Header>Per una Europa social</HeroSlide.Header>
-            <HeroSlide.Description>Reivindicamos la Europa de los Pueblos, y el apoyo y respeto de la UE a su diversidad nacional, cultural y lingüística, incluyendo las minorías y naciones sin Estado. Rechazamos el recorte a su autonomía y procesos de decisión democráticos y reclamamos la participación real y efectiva de las unidades subestatales en la toma de decisiones europeas, con especial atención a las Regiones Europeas Ultraperiféricas dotándolas de su propia circunscripción electoral.</HeroSlide.Description>
+            <HeroSlide.Header>#INFRAESTRUCTURAS</HeroSlide.Header>
+            <HeroSlide.Description>Por unas infraestructuras europeas sostenibles y eficaces que permitan generar empleo de calidad en nuestras empresas.</HeroSlide.Description>
           </HeroSlide>
         </Carousel>
       </div>
@@ -79,3 +79,5 @@ class Hero extends React.Component {
 }
 
 export default Hero
+
+

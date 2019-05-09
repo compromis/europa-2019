@@ -1,7 +1,6 @@
 import React from "react"
 import IntLink from "./elements/int-link"
-import { FormattedMessage } from "react-intl"
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
+import { FaFacebook, FaTwitter } from "react-icons/fa"
 
 const CandidateItemWrapper = ({children, to, ...props}) => (
   <>
@@ -27,7 +26,7 @@ class CandidateItem extends React.Component {
   }
   
   render () {
-    const { name, id, image, to, size, social } = this.props
+    const { name, image, to, size, social } = this.props
     const { bioDisplayed } = this.state
 
     return (
