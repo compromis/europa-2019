@@ -35,6 +35,19 @@ class Menu extends React.Component {
                 <li><a href="https://www.facebook.com/compromisoporeuropa" className="social-icon facebook" target="_blank" rel="noopener noreferrer"><FaFacebook /></a></li>
                 <li><a href="https://twitter.com/compromisoEU" className="social-icon twitter" target="_blank" rel="noopener noreferrer"><FaTwitter /></a></li>
               </ul>
+              <div className="mt-4 menu-coalition">
+                <FormattedMessage id="footer_campaign" values={{name: <strong>Compromiso por Europa</strong>}} />
+                <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Compromís</a>,
+                <a href="https://enmarea.gal" target="_blank" rel="noopener noreferrer">En Marea</a>,
+                <a href="https://www.mespermallorca.cat" target="_blank" rel="noopener noreferrer">Més per Mallorca</a>,
+                <a href="https://www.chunta.com" target="_blank" rel="noopener noreferrer">Chunta Aragonesista</a>,
+                <a href="http://www.partidocastellano.org/" target="_blank" rel="noopener noreferrer">Partido Castellano</a>,
+                <a href="https://iniciativadelpuebloandaluz.org/" target="_blank" rel="noopener noreferrer">Iniciativa del Pueblo Andaluz</a>,
+                <a href="https://www.izquierdaandalucista.org/" target="_blank" rel="noopener noreferrer">Izquierda Andalucista</a>,
+                <a href="https://www.caballasceuta.com/" target="_blank" rel="noopener noreferrer">Caballas</a>,
+                <a href="http://www.coalicionpormelilla.com/" target="_blank" rel="noopener noreferrer">Coalición por Melilla</a>, y
+                <a href="http://www.verdes-villena.org/" target="_blank" rel="noopener noreferrer">Verdes de Europa</a>.
+              </div>
             </div>
           </div>
         </div>

@@ -14,15 +14,15 @@ const Footer = () => (
           <div className="footer-coalition-links">
             <FormattedMessage id="footer_campaign" values={{name: <strong>Compromiso por Europa</strong>}} /><br />
             <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Compromís</a>,
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">En Marea</a>,
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Més per Mallorca</a>,
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Chunta Aragonesista</a>,
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Partido Castellano</a>,
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Iniciativa del Pueblo Andaluz</a>,
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Izquierda Andalucista</a>,
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Caballas</a>,
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Coalición por Melilla</a>, y
-            <a href="https://compromis.net" target="_blank" rel="noopener noreferrer">Verdes de Europa</a>.
+            <a href="https://enmarea.gal" target="_blank" rel="noopener noreferrer">En Marea</a>,
+            <a href="https://www.mespermallorca.cat" target="_blank" rel="noopener noreferrer">Més per Mallorca</a>,
+            <a href="https://www.chunta.com" target="_blank" rel="noopener noreferrer">Chunta Aragonesista</a>,
+            <a href="http://www.partidocastellano.org/" target="_blank" rel="noopener noreferrer">Partido Castellano</a>,
+            <a href="https://iniciativadelpuebloandaluz.org/" target="_blank" rel="noopener noreferrer">Iniciativa del Pueblo Andaluz</a>,
+            <a href="https://www.izquierdaandalucista.org/" target="_blank" rel="noopener noreferrer">Izquierda Andalucista</a>,
+            <a href="https://www.caballasceuta.com/" target="_blank" rel="noopener noreferrer">Caballas</a>,
+            <a href="http://www.coalicionpormelilla.com/" target="_blank" rel="noopener noreferrer">Coalición por Melilla</a>, y
+            <a href="http://www.verdes-villena.org/" target="_blank" rel="noopener noreferrer">Verdes de Europa</a>.
           </div>
         </div>
       </div>  

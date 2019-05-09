@@ -61,11 +61,11 @@ class Manifesto extends React.Component {
               <iframe title="Més per Mallorca" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmespermallorca%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
               <iframe title="Chunta Aragonesista" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FChunta-Aragonesista-101179693581%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=603979510082106" width="100%" height={70} style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder={0} allowtransparency allow="encrypted-media"></iframe>
               <div className="coalition-logos">
-                <img src={LogoCaballas} alt="Caballas" />
-                <img src={LogoCPM} alt="CPM" />
-                <img src={LogoIniciativa} alt="Iniciativa Pueblo Andaluz" />
-                <img src={LogoIzqAndalucista} alt="Izquierda Andalucista" />
-                <img src={VerdesEuropa} alt="Verdes de Europa" />
+                <a href="https://www.caballasceuta.com/" target="_blank" rel="noopener noreferrer"><img src={LogoCaballas} alt="Caballas" /></a>
+                <a href="http://www.coalicionpormelilla.com/" target="_blank" rel="noopener noreferrer"><img src={LogoCPM} alt="CPM" /></a>
+                <a href="https://iniciativadelpuebloandaluz.org/" target="_blank" rel="noopener noreferrer"><img src={LogoIniciativa} alt="Iniciativa Pueblo Andaluz" /></a>
+                <a href="https://www.izquierdaandalucista.org/" target="_blank" rel="noopener noreferrer"><img src={LogoIzqAndalucista} alt="Izquierda Andalucista" /></a>
+                <a href="http://www.verdes-villena.org/" target="_blank" rel="noopener noreferrer"><img src={VerdesEuropa} alt="Verdes de Europa" /></a>
               </div>
             </div>
           </div>

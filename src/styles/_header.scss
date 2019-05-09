@@ -241,6 +241,16 @@
     }
   }
 
+  &-coalition {
+    max-width: 800px;
+    margin-left: 2.5rem;
+
+    a {
+      color: $white;
+      margin-left: .25rem;
+    }
+  }
+
   &-button {
     color: $gray-700;
     z-index: 10000;

@@ -29,10 +29,10 @@ class HeroSlide extends React.Component {
             {React.Children.map(children, child => child)}
             <div className="hero-slide-share">
               <TwitterShareButton
-                url={'https://compromisoporeuropa.com'}
+                url={'https://compromisoporeuropa.eu'}
                 options={{ text: '#CompromisoPorEuropa', via: 'compromisoEU' }}
               />
-              <ReactFBLike href="https://compromisoporeuropa.com" layout="button_count" language="es_ES" appId="603979510082106" version="v2.12" />
+              <ReactFBLike href="https://compromisoporeuropa.eu" layout="button_count" language="es_ES" appId="603979510082106" version="v2.12" />
             </div>
           </div>
         </div>
