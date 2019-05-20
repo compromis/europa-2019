@@ -20,14 +20,6 @@
     }
   }
 
-  &-logo {
-    color: $gray-600;
-
-    &:hover {
-      color: $orange !important; 
-    }
-  }
-
   h4 {
     font-size: 1.3rem;
     margin-bottom: 1.7rem;
@@ -36,6 +28,7 @@
   p {
     font-weight: normal;
     justify-self: end;
+    font-size: 0.9rem;
   }
 
   .twitter {
@@ -51,10 +44,45 @@
     margin-bottom: 1rem;
   }
 
+  &-disclaimer {
+      display: flex;
+      align-items: flex-end;
+      justify-items: flex-end;
+      flex-direction: row;
+      margin-bottom: 1rem; 
+
+      p {
+        margin: 0;
+      }
+
+      .manifesto-link {
+        color: #80379b;
+        &:hover{
+          text-decoration: none;
+          color: darken(#80379b, 20%);
+        }
+      }
+
+      &-logo {
+        width: 120px;
+        flex-shrink: 0;
+        margin-left: 1.2rem;
+
+        img {
+          width: 100%;
+        }
+      }
+  }
+
   &-coalition {
     display: flex;
     text-align: right;
     align-items: flex-end;
+    flex-direction: column;
+
+    &-links {
+      margin-top: 2rem;
+    }
 
     a {
       color: $gray-600;

@@ -49,5 +49,6 @@ module.exports = {
   news_header: "Notícies",
   news_more_on: "Més notícies en compromis.net",
   footer_follow: "Segueix l'activitat de",
-  footer_campaign: "{name} és una iniciativa conjunta de"
+  footer_campaign: "{name} és una iniciativa conjunta de",
+  footer_efa: "Aquest lloc web ha rebut l'ajuda financera del Parlament Europeu. Sols reflexa les opinions del seu autor i el Parlament Europeu no és responsable de la utilització que es faça de les informacions contingudes en aquest lloc web"
 };
